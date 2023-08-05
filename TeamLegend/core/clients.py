@@ -10,10 +10,9 @@ LOGS.info("Client Starting")
 application = Application.builder().token("TOKEN").build()
 tbot = TelegramClient(
     session="LegendTBot",
-    api_id=APP_ID,
+    api_id=API_ID,
     api_hash=API_HASH,
     loop=loop,
-    app_version=__version__,
     connection=ConnectionTcpAbridged,
     auto_reconnect=True,
     connection_retries=None,
