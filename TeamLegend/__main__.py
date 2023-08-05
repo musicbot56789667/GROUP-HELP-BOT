@@ -2,8 +2,7 @@ from telegram import Update
 
 from TeamLegend.plugins import ALL_MODULES
 
-from .Config import TOKEN
-from .core.clients import application, tbot, pbot
+from .core.clients import application, pbot, tbot
 from .core.logger import LOGS
 
 
