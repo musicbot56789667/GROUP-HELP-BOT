@@ -1,9 +1,11 @@
-from .core.logger import LOGS
-from .core.clients import legendtl, legendpb, application
-from .Config import TOKEN
 from telegram import Update
 
 from TeamLegend.plugins import ALL_MODULES
+
+from .Config import TOKEN
+from .core.clients import application, legendpb, legendtl
+from .core.logger import LOGS
+
 
 def main():
     """Run bot."""
@@ -14,6 +16,5 @@ def main():
     application.run_polling(allowed_updates=Update.ALL_TYPES)
 
 
-    
 if __name__ == "__main__":
     main()
