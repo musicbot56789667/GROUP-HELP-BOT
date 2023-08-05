@@ -1,5 +1,5 @@
 from telegram.ext import Application
-from .client import 
+from telethon import TelegramClient
 from pyrogram import Client
 from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
 
