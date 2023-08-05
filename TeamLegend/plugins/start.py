@@ -1,12 +1,16 @@
-from LegendGHB import get_readable_time
-from TeamLegend import StartTime
 import time
-from telegram.ext import ContextTypes
-from telegram import Update
-from TeamLegend.core import HELPABLE, IMPORTED
-from .help import send_help
+
+from LegendGHB import get_readable_time
 from LegendGHB.helpers.chat_status import is_user_admin
+from telegram import Update
+from telegram.ext import ContextTypes
+
+from TeamLegend import StartTime
+from TeamLegend.core import HELPABLE, IMPORTED
+
+from .help import send_help
 from .settings import send_settings
+
 
 def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     args = context.args
