@@ -17,5 +17,3 @@ TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
 TOKEN = os.environ.get("TOKEN", None)
 TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
 WORKERS = int(os.environ.get("WORKERS", 8))
-
-
