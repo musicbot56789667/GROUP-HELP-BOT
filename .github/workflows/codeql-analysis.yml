@@ -13,10 +13,10 @@ name: "CodeQL"
 
 on:
   push:
-    branches: [ Kittu ]
+    branches: [ Legend ]
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ Kittu ]
+    branches: [ Legend ]
   schedule:
     - cron: '25 3 * * 5'
 
