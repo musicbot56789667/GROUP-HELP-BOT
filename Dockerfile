@@ -65,7 +65,7 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/TeamLegend
-RUN git clone https://github.com/kannadigaxd/KANNADIGXDBOT /root/TeamLegend
+RUN git clone https://github.com/TG-LEGEND/GROUP-HELP-BOT /root/TeamLegend
 WORKDIR /root/TeamLegend
 
 #Copy config file to /root/TeamLegend/TeamLegend
