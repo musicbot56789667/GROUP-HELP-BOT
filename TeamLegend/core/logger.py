@@ -7,4 +7,4 @@ logging.basicConfig(
     level=logging.INFO,
 )
 
-LOGS = logging.getLogger(__name__
+LOGS = logging.getLogger(__name__)
