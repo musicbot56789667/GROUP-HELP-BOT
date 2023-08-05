@@ -1,14 +1,5 @@
-from telegram.ext import import Application
+from telegram.ext import Application
 from TeamLegend.Config import TOKEN
-import logging
-
-# enable logging
-logging.basicConfig(
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    handlers=[logging.FileHandler("teamlegend.txt"), logging.StreamHandler()],
-    level=logging.INFO,
-)
-
-LOGS = logging.getLogger(__name__)
-  
+from .logger import LOGS
+LOGS.info("Client Starting")  
 application = Application.builder().token("TOKEN").build()
