@@ -1,9 +1,10 @@
+from pyrogram import Client
 from telegram.ext import Application
 from telethon import TelegramClient
-from pyrogram import Client
 from telethon.network.connection.tcpabridged import ConnectionTcpAbridged
 
 from .logger import LOGS
+
 loop = None
 
 LOGS.info("Client Starting")
@@ -19,4 +20,3 @@ tbot = TelegramClient(
 ).start(bot_token=TOKEN)
 
 pbot = Client("LegendPBot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
-
